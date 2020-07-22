@@ -1,2 +1,3 @@
-# training-camp-cypress-course
-Treinamento com cypress
+# cypress-aplicacao-moderna
+
+Curso realizado de cypress pela plataforma udemy
