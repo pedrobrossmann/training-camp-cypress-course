@@ -19,3 +19,7 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+
+// Cypress.SelectorPlaygound.defaults({
+//   selectorPriority: ['id', 'class', 'atributes', 'data-cy', 'data-test', 'data-testid', 'tag']
+// })
