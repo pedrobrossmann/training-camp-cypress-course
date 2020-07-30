@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Curso realizado de cypress pela plataforma udemy",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
   "devDependencies": {
     "cypress": "^4.10.0",
     "cypress-xpath": "^1.6.0"
