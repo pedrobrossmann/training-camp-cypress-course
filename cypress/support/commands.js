@@ -9,6 +9,5 @@ Cypress.Commands.add('login', (user, pwd) =>{
     cy.visit('http://barrigareact.wcaquino.me')
     cy.get('[data-test=email]').type('testepedro@teste.com')
     cy.get('[data-test=passwd]').type('123')
-    cy.clickAlert('.btn', 'Bem Vindo!Pedro Teste')
-    //cy.get('.btn').click()
+    cy.clickAlert('.btn', 'Bem vindo, Pedro teste!')
 })

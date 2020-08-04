@@ -23,5 +23,3 @@ module.exports = (on, config) => {
 // Cypress.SelectorPlaygound.defaults({
 //   selectorPriority: ['id', 'class', 'atributes', 'data-cy', 'data-test', 'data-testid', 'tag']
 // })
-
-cy.faker = require('faker');
