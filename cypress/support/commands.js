@@ -1,3 +1,5 @@
+import loc from '../support/locators'
+
 Cypress.Commands.add('clickAlert',(locator, menssage) =>{
     cy.get(locator).click()
     cy.on('window.alert', msg =>{
@@ -7,7 +9,7 @@ Cypress.Commands.add('clickAlert',(locator, menssage) =>{
 
 Cypress.Commands.add('login', (user, pwd) =>{
     cy.visit('http://barrigareact.wcaquino.me')
-    cy.get('[data-test=email]').type('testepedro@teste.com')
-    cy.get('[data-test=passwd]').type('123')
-    cy.clickAlert('.btn', 'Bem vindo, Pedro teste!')
+    cy.get(loc.login.user).type('testepedro@teste.com')
+    cy.get(loc.login.password).type('123')
+    cy.clickAlert(loc.login.btn_login, 'Bem vindo, Pedro teste!')
 })
