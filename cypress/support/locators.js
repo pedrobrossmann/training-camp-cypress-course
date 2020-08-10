@@ -4,6 +4,7 @@ const locators = {
         password: '[data-test=passwd]',
         btn_login: '.btn'
     },
+    home: '[data-test="menu-home"]',
 
     mensagem: {
         sucesso: ('.toast-success'),
@@ -20,6 +21,7 @@ const locators = {
             descricao: '[data-test=descricao]',
             valor: '[data-test=valor]',
             interessado: '[data-test=envolvido]',
+            tipoConta: '[data-test="conta"]',
             status: '[data-test=status]',
             salvarMovimentacao: '.btn-primary',
             listaContas: '.list-group li'
@@ -29,7 +31,7 @@ const locators = {
             acessarPaginaContas: '[href="/contas"]',
             nameConta:  '[data-test=nome]',
             salvarConta: '.btn'
-        }   
+        },   
     },
 
     extrato:{

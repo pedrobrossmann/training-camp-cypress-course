@@ -5,14 +5,11 @@ Cypress.Commands.add('acessarContas', () =>{
     cy.get(loc.menu.contas.acessarPaginaContas).click()
 })
 
-Cypress.Commands.add('adicionarNovaConta', (dataTransacao, dataPagamento, nome, valor, interessado ) =>{
+Cypress.Commands.add('adicionarNovaConta', (nome, valor, interessado, nomeTipoConta) =>{
     cy.get(loc.menu.movimentacao.selectConfig).click()
-    cy.get(loc.menu.movimentacao.dataTransacao)
-        .type(dataTransacao)
-    cy.get(loc.menu.movimentacao.dataPagamento)
-        .type(dataPagamento)
     cy.get(loc.menu.movimentacao.descricao).type(nome)
     cy.get(loc.menu.movimentacao.valor).type(valor)
     cy.get(loc.menu.movimentacao.interessado).type(interessado)
+    cy.get(loc.menu.movimentacao.tipoConta).select(nomeTipoConta)
     cy.get(loc.menu.movimentacao.status).click()
 })
