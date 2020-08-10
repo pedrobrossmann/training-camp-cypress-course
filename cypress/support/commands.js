@@ -7,6 +7,12 @@ Cypress.Commands.add('clickAlert',(locator, menssage) =>{
     })
 })
 
+Cypress.Commands.add('alert',(menssage) =>{
+    cy.on('window.alert', msg =>{
+        expect(msg).to.be.equal(menssage)
+    })
+})
+
 Cypress.Commands.add('login', (user, pwd) =>{
     cy.visit('http://barrigareact.wcaquino.me')
     cy.get(loc.login.user).type('testepedro@teste.com')
