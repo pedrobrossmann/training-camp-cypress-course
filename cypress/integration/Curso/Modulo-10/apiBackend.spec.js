@@ -5,7 +5,7 @@ const referenciaConta = faker.random.number(5000)
 describe('Should test a service level', () =>{
     let token
     before(() => {
-        cy.getToken('pedrobrossmann@gmail.com', '01Infinity02')
+        cy.getToken('teste@gmail.com', 'Senha')
             .then(tkn => {
                 token = tkn
             })
