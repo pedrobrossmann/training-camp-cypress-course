@@ -1,16 +1,26 @@
-# cypress-aplicacao-moderna
-Instalando o Cypress
+# Testes e2e - Treinamento realizado pelo curso [cypress-aplicação-moderna](https://www.udemy.com/course/testes-cypress/)
 
-Recomendo seguir a documentação do cypress:
-https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
+### Tecnologias Utilizadas:
+* Framework para crição dos testes [cypress](https://www.cypress.io/)
+* Aplicação de teste [wcaquino](https://wcaquino.me/cypress/componentes.html)
 
+#### 1. Clone o projeto
 
-Para rodar o projeto?
+```
+git clone https://github.com/pedrobrossmann/training-camp-cypress-course.git
+training-camp-cypress-course
+```
 
-Não e necessario subir uma aplicação local, todo processo de treinamento e realizado na seguinte plataforma:
+#### 2. Atualize as dependencias
 
-https://wcaquino.me/cypress/componentes.html
-
-A partir do módulo 9, passamos a aplicação pratica para seguinte aplicação:
-
-http://barrigareact.wcaquino.me
+```
+npm install
+```
+#### 3. Execute o cypress com interface gráfica
+```
+npx cypress open
+```
+#### 4. Execute o cypress via linha de comando
+```
+npx cypress run
+```
